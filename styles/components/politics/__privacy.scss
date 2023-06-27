@@ -1,0 +1,29 @@
+.politics {
+  margin-top: 10rem;
+  padding: 3rem 5rem;
+  &__container {
+    padding: 3rem;
+    box-shadow: 0rem 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &__heading {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    color: #444;
+    margin: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 2;
+    font-size: 1.6rem;
+    color: #666;
+  }
+}

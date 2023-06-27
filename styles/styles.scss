@@ -1,0 +1,36 @@
+// UI Settings.
+
+@import "./components/abstracts/mixins";
+@import "./general/general";
+
+// Screens.
+
+// Components.
+@import "./components/aboutMe/headerAbout";
+@import "./components/aboutMe/presentation";
+
+@import "./components/chalesPage/footer";
+@import "./components/chalesPage/header";
+@import "./components/chalesPage/perks";
+@import "./components/chalesPage/questions";
+@import "./components/chalesPage/recommended";
+@import "./components/chalesPage/why";
+
+@import "./components/login/login";
+
+@import "./components/modals/cart";
+@import "./components/modals/edit";
+
+@import "./components/navbar";
+
+@import "./components/shop/cart/cartPage";
+@import "./components/shop/categories/categories";
+@import "./components/shop/product/product";
+@import "./components/shop/product/productList";
+
+@import "./components/politics/_privacy";
+
+@import "./components/Admin/adminLayout";
+@import "./components/Admin/products";
+
+@import "./components/Admin/users/user";

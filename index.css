@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --color-primary: #ff922b;
+
+  --color-primary-light-1: #ffb36b;
+  --color-primary-light-2: #ffc995;
+  --color-primary-light-3: #ffdebf;
+  --color-primary-light-4: #ffe9d5;
+
+  --color-primary-dark: #cc7522;
+  --color-primary-dark-2: #e68327;
+
+  --color-grey-light-1: #f3f4f6;
+  --color-grey-light-2: #e5e7eb;
+  --color-grey-light-3: #d1d5db;
+  --color-grey-light-4: #9ca3af;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+}

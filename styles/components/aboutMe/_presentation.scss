@@ -1,0 +1,126 @@
+.presentation {
+  margin-top: 25rem;
+  padding: 5rem;
+
+  @include respond(phone) {
+    margin-top: 10rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    color: var(--color-primary-dark-2);
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    line-height: 2.2;
+    width: 100%;
+    color: #555;
+    position: relative;
+
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+  }
+
+  &__img {
+    width: 100vw;
+  }
+
+  &__img--ourWork {
+    transform: translateY(-10%);
+    width: 100%;
+  }
+}
+
+.img {
+  margin-top: 15rem;
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
+}
+
+.sobreNosotros {
+  overflow: hidden;
+  padding: 15rem 20rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 30rem;
+  row-gap: 10rem;
+  position: relative;
+  @include respond(phone) {
+    padding: 7rem 5rem;
+  }
+
+  &__container {
+    margin-bottom: 5rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    color: var(--color-primary-dark-2);
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #666;
+    margin-top: 2rem;
+  }
+  &__img {
+    opacity: 0.15;
+    z-index: -1;
+    position: absolute;
+    width: 75vw;
+    height: 60vw;
+    transform: scaleX(-100%);
+    transform: translateX(20%);
+    overflow: hidden;
+    @include respond(phone) {
+      height: 100%;
+      width: 250%;
+      transform: translateX(-55%);
+    }
+  }
+}
+
+.thread {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.thread::before,
+.thread::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+}
+
+.thread::before {
+  transform-origin: 0 0;
+}
+
+.thread::after {
+  transform-origin: 0 100%;
+}

@@ -1,0 +1,115 @@
+.individual {
+  margin-top: 5rem;
+  z-index: -1;
+  &__container {
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+    padding: 5rem;
+  }
+
+  &__products--container {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    column-gap: 10rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text--container {
+    grid-column: 2/3;
+
+    top: 10rem;
+    height: 100vh;
+    position: sticky;
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 3.6rem;
+    color: #333;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    color: #555;
+  }
+
+  &__perk {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #444;
+  }
+
+  &__description {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+  }
+  &__images--small {
+    top: 10rem;
+    height: 100vh;
+    position: sticky;
+    cursor: pointer;
+  }
+
+  &__button {
+    width: 30vw;
+  }
+}
+
+.other {
+  z-index: 2;
+}
+
+.perk--icon {
+  width: 3rem;
+  color: var(--color-primary-dark);
+}
+
+.button__card {
+  width: 90%;
+}
+
+.phone__product {
+  @include respond(phone) {
+    display: block;
+    overflow: hidden;
+  }
+
+  display: none;
+}
+
+.phoneProduct__carousel {
+  height: 50vh;
+  width: 110%;
+
+  margin-top: 10rem;
+}
+
+.carousel__img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.phoneProduct__text {
+  padding: 2rem;
+}
+
+.selectedImage {
+  border: 5px solid var(--color-primary-dark);
+}

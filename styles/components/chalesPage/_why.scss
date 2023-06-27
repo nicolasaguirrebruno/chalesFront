@@ -1,0 +1,33 @@
+.why {
+  padding: 6rem;
+  margin-top: 5rem;
+  height: 100%;
+  position: relative;
+  height: 100%;
+
+  &__section__name {
+    color: var(--color-primary-dark);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    text-align: center;
+    @include respond(phone) {
+      font-size: 1.4rem;
+      margin-top: -5rem;
+    }
+  }
+
+  &__heading__secondary {
+    color: #555;
+    font-size: 3rem;
+    padding: 2rem 5rem;
+    letter-spacing: -0.75px;
+    font-weight: 400;
+    text-align: center;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+}
